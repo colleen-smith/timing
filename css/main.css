@@ -1,0 +1,236 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	font-size: 1.7em;
+}
+
+section {
+	padding-left: 8%;
+}
+
+canvas {
+	padding-left: 2%;
+}
+
+.mcheader {
+	background-color: rgb(2,2,2);
+	padding: 20px 0px 20px 5px;
+}
+
+.welcome {
+	text-align:center;
+	font-size: 2.4em;
+	color:rgb(206, 3, 3);
+	margin-top: 10px;
+}
+
+
+/* .nav {	background-color: rgb(224,224,224);}
+*/
+
+.mcli {
+	color:rgb(206, 3, 3);
+	background-color: rgb(224,224,224);
+	/*border: 0px ridge rgb(200,200,200);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;*/
+	border-bottom: 0px;
+}
+
+.mcli a {
+	color:rgb(206, 3, 3);
+}
+
+h1.pgtitle {
+	text-align:center;
+}
+
+.btn {
+	margin-bottom:5px;
+}
+
+
+/*Center contents in columns */
+.center {
+    text-align: center;
+}
+
+.mcintro {
+	width: 98%;
+	text-align: center;
+	padding: 10%;
+}
+
+.bigpic {
+	width: 775px;
+}
+
+caption {
+	background-color: rgb(224, 224, 224);
+	text-align: center;
+	color:rgb(3, 3, 3);
+	font-size: 1.75em;
+	font-weight: bold;
+	margin-bottom: 10px;
+	border: 2px solid black;
+	border-radius: 5px;
+}
+
+.linklist a {
+	color:rgb(206, 3, 3);
+}
+
+
+
+.pad10px {
+	padding: 10px;
+}
+
+.imgcenter {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Columns */
+
+.row {
+  margin-right: 15px;
+  margin-left: 11px;
+}
+
+.pad4px {
+	padding: 4px;
+}
+
+	/* Footer */
+
+
+.proddesc {
+	padding-left: 2%;
+
+}
+
+.imgcenter2 {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	padding: 2px;
+	margin-bottom: 20px;
+}
+
+.refer {
+	font-size: .8em;
+}
+
+.refer a {
+	color: rgb(33,36,144);
+	color:rgba(33,36,144,1.00);
+}
+
+footer {
+	display: block;
+	box-sizing: border-box;
+	clear: both;
+	width: 100%;
+	padding-top: 10px;
+
+	text-align: center;
+}
+
+footer address {
+	background-color: rgb(2, 2, 2);
+	color: white;
+	color: rgba(255, 255, 255, 0.8);
+	font: bold small-caps 1.2em/4em 'Times New Roman', Times, serif;
+	text-align: center;
+}
+
+/* @media screen and (min-width: 768px){
+.jumbotron .mcheader { padding: 10px 0;
+} */
+
+@media screen and (max-width: 1201px) {
+
+.banner2 {
+       width: 100%;
+		height: auto;
+    }
+
+.logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	height:auto;}
+
+
+}
+
+@media screen and (min-device-width : 320px) and (max-width: 480px) {
+.smallpic {
+	width: 100%;
+	height: auto;
+}
+
+.mcli {
+ width: 95%;
+}
+
+}
+
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 481px) and (max-device-width : 1024px) {
+/* Styles */
+
+.mcli {
+	width: 50%;
+}
+
+}
+
+
+
+// Responsive modal
+
+@media (max-width: 767px) {
+  // Modals
+  .modal {
+    position: absolute;
+    top:   20px;
+    left:  20px;
+    right: 20px;
+    width: auto;
+    margin: 0;
+  }
+
+  .modal.fade.in { top: 20px; }
+
+  .modal-body {
+    overflow: visible;
+    max-height: none;
+  }
+
+ .bigpic {
+	width: 98%;
+ }
+}
+
+@media (max-width: 480px) {
+  // Modals
+  .modal-body {
+    top:   5px;
+    left:  5px;
+    right: 5px;
+  }
+
+  .modal.fade.in { top: 10px; }
+
+   .bigpic {
+	width: 98%;
+ }
+}

@@ -1,0 +1,114 @@
+
+/*
+ * Base structure
+ */
+
+html,
+
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: block;
+  float: left;
+  width: 100%;
+  height: auto%; /* For at least Firefox */
+/*   min-height: 100%;*/
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-wrapper-inner {
+  display: block;
+  float: left;
+/*  vertical-align: top; */
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+
+
+/*
+ * Header
+
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ */
+
+
+/* overlay
+.cycle-overlay {
+    font-family: tahoma, arial;
+    position: absolute; bottom: 0; width: 50%; z-index: 600;
+    background: black; color: white; padding: 15px; opacity: .5;
+}*/
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
